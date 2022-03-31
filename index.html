@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidenav" id="sidenav">
+        <a href="#Home" id="page1slideButton">Home</a>
+        <a href="#About" id="page2slideButton">About</a>
+        <a href="#Gallery" id="page3slideButton">Gallery</a>
+        <a href="#Blog" id="page4slideButton">Blog</a>
+        <a href="#Contact" id="page5slideButton">Contact</a>
+    </div>
+    <div id="pullmenu">
+        <div class="open" id="open">></div>
+    </div>
+
+    <section class="overlay" id="overlay">
+      <i class="overlayClose">X</i>
+      <div id="overlayClose"></div>
+        <div class="overlayContent">
+          <img src="4.JPG" id="overlayimage">
+          <div id="overlayText"></div>
+        </div>
+    </section>   
+    <div class="leftSide">
+        <div class="sliderLeftTrack">
+            <div id="slideContainer" class="sliderContainer">
+                <div id="page5Left" class="page5 slideImage">
+                </div>
+                <div id="page4Left" class="page4 slideImage">
+                </div>
+                <div id="page3Left" class="page3 slideImage">     
+                </div>
+                
+                <div id="page2Left" class="page2 slideImage">
+                    <img src="3.jpg">
+                </div> 
+                <div id="page1Left" class="page1 slideImage">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="rightSide">
+        <div class="sliderRightTrack">
+            <div id="sliderContainerRight" class="sliderContainerRight">
+                <div id="page1Right" class="page1Right slideImage">
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right titleAnimation">
+                        <h1 class="titleMobile1">Areng</h1>
+                    </div>
+                    <div class="gridPage1Right titleAnimation2">
+                        <h1 class="titleRight">Media Group</h1>
+                    </div>
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right"></div>
+                    <div class="gridPage1Right">
+                        <ul class="listcontainer">
+                            <li class="listItems">
+                                <a class="titleSocial1 "><img src="Content\Facebook.png"></a>
+                            </li>
+                            <li class="listItems">
+                                <a class="titleSocial2 "><img src="Content\Instagram.png"></a>
+                            </li>
+                            <li class="listItems">
+                                <a class="titleSocial1 "><img src="Content\Twitter.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gridPage1Right"></div>
+                    
+
+                </div>
+                <div id="page2Right" class="page2Right slideImage">
+                    <section id="aboutBody" class="aboutBody">
+                        <header class="aboutHeader">
+                            <h1 class="headerText">ABOUT</h1>
+                        </header>
+                        <section class="aboutVideo">
+                          <video muted autoplay loop>
+                              <source src="Content/test.mp4" type="video/mp4">
+                              <source src="movie.ogg" type="video/ogg">
+                              Your browser does not support the video tag.
+                          </video>
+                        </section>
+                        <section class="aboutText">
+                            <div class="aboutTopText">
+                                <h1>What we do?</h></h1>
+                                <div class="line"></div>
+                                <p class="Shorten">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            </div>
+                            <div class="aboutBottomText">
+                                <div class="aboutBottomTextHeader">
+                                    <h1><b>About<br> the <br> Team</b></h1>
+                                    <div class="aboutbotIMGcontainer">
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <p class="Shorten">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+
+                <div id="page3Right" class="page3Right slideImage">
+                    <section id="galleryBody" class="sectionBody">
+                        <header class="aboutHeader">
+                            <h1 class="headerText">Gallery</h1>
+                        </header>     
+                        <div class="selSlide">
+                            <span>Order Type:</span>
+                            <select id="options" >
+                                <option value="white">In order</option>
+                                <option value="random">Random</option>
+                            </select>
+                        </div>        
+                        <section class="slideshow">
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/1_sm.jpg" />
+                                  <img src="Content/slide/1.jpg" alt="A badger" />
+                                </picture>
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/2_sm.jpg" />
+                                  <img src="Content/slide/2.jpg" alt="A badger" />
+                                </picture>
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/3_sm.jpg" />
+                                  <img src="Content/slide/3.jpg" alt="A badger" />
+                                </picture>
+                                <picture>
+                                  <source media="(max-width: 600px)" srcset="Content/slide/4_sm.jpg" />
+                                  <img src="Content/slide/4.jpg" alt="A badger" />
+                                </picture>
+                                <div class="navButton" id="leftButton"><</div>
+                                <div class="navButton" id="rightButton">></div>                     
+                        </section>
+                        <div class="info-boxes">
+                            <div class="image-title"><span id="imgTitle">Picture of a Cute Dog</span></div>
+                            <div class="image-date"><span id="imgDate">1 Jan 2020</span></div>
+                           <div class="like"><span id="imgLike">32</span></div>  
+                         </div>
+                         <section class="gallery">
+                            <div id="sortingButtons">
+                             <span>Sort by:</span>
+                                <button class="btn active" onclick="sortContent()" id="all"> Show all</button>
+                                <button class="btn" onclick="sortContent()" id="nature"> Nature</button>
+                                <button class="btn" onclick="sortContent()" id="cars"> Cars</button>
+                              </div><br>
+                              <div class="galleryFlex ">
+                                <div class="column all nature">
+                                  <div class="content">
+                                    <img src="Content/slide/1.jpg" alt="Mountains" style="width:100%">
+                                    <h4>Mountains</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+
+                                <div class="column all nature">
+                                  <div class="content">
+                                    <img src="Content/slide/2.jpg" alt="Lights" style="width:100%">
+                                    <h4>Lights</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+
+                                <div class="column all cars">
+                                  <div class="content">
+                                    <img src="Content/slide/3.jpg" alt="Nature" style="width:100%">
+                                    <h4>Forest</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+                              
+                                <div class="column all cars">
+                                  <div class="content">
+                                    <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                    <h4>Retro</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                  </div>
+                                </div>
+                                <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+                                  <div class="column all cars">
+                                    <div class="content">
+                                      <img src="Content/slide/4.jpg" alt="Car" style="width:100%">
+                                      <h4>Retro</h4>
+                                      <p>Lorem ipsum dolor..</p>
+                                    </div>
+                                  </div>
+
+                            </div>
+                         </section>
+
+                    </section>
+                </div>
+
+                <div id="page4Right" class="page4Right slideImage">
+                  <header class="aboutHeader">
+                    <h1 class="headerText">Blog</h1>
+                </header> 
+                <section>
+                  <!--https://www.davidmacd.com/blog/alternate-text-for-css-background-images.html-->
+                  <div class="blogsContainer">
+                    <div class="blogBox" id="b1">
+                      <div class="detect"></div>
+                      <div class="blogImage" style="background-image: url(4.JPG);" role="img" aria-label="[place alt text here]"></div>
+                      <div class="blogText">
+                        <h1>Title of the blog</h1>
+                        <p>Description</p>
+                      </div>
+                    </div>
+                    <div class="blogBox" id="b2">
+                      <div class="detect"></div>
+                      <div class="blogImage" style="background-image: url(4.JPG);" role="img" aria-label="[place alt text here]"></div>
+                      <div class="blogText">
+                        <h1>What happens when the title is really long</h1>
+                        <p>what happens if the page description is a lot long then i thought and it does not fix in the box. like really really really really really really really really really really really really long</p>
+                      </div>
+                    </div>
+                    <div class="blogBox " id="b3">
+                      <div class="detect"></div>
+                      <div class="blogImage" style="background-image: url(4.JPG);" role="img" aria-label="[place alt text here]"></div>
+                      <div class="blogText">
+                        <h1>Title of the blog</h1>
+                        <p>Description</p>
+                      </div>
+                    </div>
+                    <div class="blogBox" id="b4">
+                      <div class="detect"></div>
+                      <div class="blogImage" style="background-image: url(4.JPG);" role="img" aria-label="[place alt text here]"></div>
+                      <div class="blogText">
+                        <h1>Title of the blog</h1>
+                        <p>Description</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+
+
+                </div>
+
+
+                <div id="page5Right" class="page5Right slideImage">
+                    <div class="form">
+                    <form id="form1">
+                        <label for="name">Name:<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" value="" placeholder="your name" required><br>
+                        
+                        <label for="email">Email:<span class="required">*</span></label>
+                        <input type="text" id="email" name="email" value="" placeholder="your email" required><br>
+                        
+                        <label for="lang">Language:</label>
+                        <select name="lang" id="lang" form="Language" required>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                        </select><br>
+                        <label for="about">About:<span class="required">*</span></label>
+                        <input type="text" id="about" name="about" required><br>
+                        <input type="submit" value="Submit" id="addUserFeedbackButton"></input>
+                    </form>
+                    <div id="thankyou">
+                        <p><b>Thank you</b> for your message. We will get to it as soon as possible</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script>
+        let open = 0;
+        function openNav() {
+            if(open == 0){
+             document.getElementById("sidenav").style.width = "250px";
+             document.getElementById("pullmenu").style.width = "270px";
+             document.getElementById("open").style.left = "260px";
+             
+             open = 1;
+            } else { 
+                document.getElementById("sidenav").style.width = "0";
+                document.getElementById("open").style.left = "0";
+                document.getElementById("pullmenu").style.width = "10px";
+                open = 0;
+            }
+        }
+        let page1Right = document.getElementById("page1Right");
+        let page2Right = document.getElementById("page2Right");
+        let page3Right = document.getElementById("page3Right");
+        let galleryBody =document.getElementById("galleryBody").scrollTop = 0;
+        let page4Right = document.getElementById("page4Right");
+        let page5Right = document.getElementById("page5Right");
+        slide = (evt) =>{
+            console.log(evt.target.id);
+            /*page1Right.scrollTop = 0;
+            page2Right.scrollTop = 0;
+            page3Right.scrollTop = 0;
+            galleryBody.scrollTop = 0;
+            page4Right.scrollTop = 0;
+            page5Right.scrollTop = 0;
+            setTimeout(()=>{
+                console.log("0");
+                page1Right.style.opacity = 0;
+                page2Right.style.opacity = 0;
+                page3Right.style.opacity = 0;
+                page4Right.style.opacity = 0;
+                page5Right.style.opacity = 0;
+            }, 200);*/
+            setTimeout(()=>{
+                if(evt.target.id == "page1slideButton"){
+                document.getElementById("slideContainer").style.bottom = "400%";
+                document.getElementById("sliderContainerRight").style.bottom = "0%"; 
+            }
+            if(evt.target.id == "page2slideButton"){
+                document.getElementById("slideContainer").style.bottom = "300%";
+                document.getElementById("sliderContainerRight").style.bottom = "100%"; 
+            }
+            if(evt.target.id == "page3slideButton"){
+                document.getElementById("slideContainer").style.bottom = "200%";
+                document.getElementById("sliderContainerRight").style.bottom = "200%"; 
+            }
+            if(evt.target.id == "page4slideButton"){
+                document.getElementById("slideContainer").style.bottom = "100%";
+                document.getElementById("sliderContainerRight").style.bottom = "300%"; 
+            }
+            if(evt.target.id == "page5slideButton"){
+                document.getElementById("slideContainer").style.bottom = "0%";
+                document.getElementById("sliderContainerRight").style.bottom = "400%"; 
+            } 
+            }, 1);
+ 
+            /*setTimeout(()=>{
+                page1Right.style.opacity = 1;
+                page2Right.style.opacity = 1;
+                page3Right.style.opacity = 1;
+                page4Right.style.opacity = 1;
+                page5Right.style.opacity = 1;
+                console.log("1");
+            }, 1200);*/
+            
+        }
+        document.getElementById("page1slideButton").addEventListener("click", slide);
+        document.getElementById("page2slideButton").addEventListener("click", slide);
+        document.getElementById("page3slideButton").addEventListener("click", slide);
+        document.getElementById("page4slideButton").addEventListener("click", slide);
+        document.getElementById("page5slideButton").addEventListener("click", slide);
+        document.getElementById("open").addEventListener("click", openNav);
+        
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+    <script>
+          let db = new PouchDB("usersData");
+          function addUserFeedback(event) {
+            let theDate = new Date().toISOString();
+            let user = {
+              _id: theDate,
+              name: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              lang:  document.getElementById("lang").value,
+              about:  document.getElementById("about").value
+            };
+    
+            db.put(user);
+            let hide = setTimeout(()=>{
+            document.getElementById("name").disabled = true;
+            document.getElementById("email").disabled = true;
+            document.getElementById("lang").disabled = true;
+            document.getElementById("about").disabled = true;
+            document.getElementById("addUserFeedbackButton").style.display = "none";
+            document.getElementById("thankyou").style.display = "block";
+            },50);
+          }
+          
+          
+          checkform  = (event) => {
+                if(document.getElementById("form1").checkValidity() == true){
+                    console.log("working");
+                    addUserFeedback();
+                    event.preventDefault();
+                } else {
+                    console.log("broken");
+                }
+          }
+          document.getElementById("addUserFeedbackButton").addEventListener("click", checkform);
+    </script>
+    <script>
+        let currentSlide = 0;
+        let slides = document.querySelectorAll(".slideshow img");
+        let slideType = document.getElementById("options");
+      
+        nextSlide = () => {
+          currentSlide++;
+          if (currentSlide >= slides.length){
+              currentSlide = 0;
+          }
+          if (options.value == "random"){
+            let i = Math.random();
+                console.log(i + "i");
+                let b = i * 4;
+                console.log(b);
+                currentSlide = Math.floor(b);
+                console.log(currentSlide + "b");
+            }
+          console.log(currentSlide);
+          showSlide();
+        };
+      
+        prevSlide = () => {
+          currentSlide--;
+            if (currentSlide == -1){
+                currentSlide = slides.length - 1;
+            }
+            if (options.value == "random"){
+                let i = Math.random();
+                console.log(i + "i");
+                let b = i * 4;
+                console.log(b);
+                currentSlide = Math.floor(b);
+                console.log(currentSlide + "b");
+            }
+            console.log(currentSlide);
+          showSlide();
+        };
+      
+        showSlide = () => {
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.opacity = 0;
+            slides[i].style.display = "none";
+          }
+          slides[currentSlide].style.opacity = 1;
+          slides[currentSlide].style.display = "block";
+          
+        };
+      
+        showSlide();
+        document
+          .getElementById("leftButton")
+          .addEventListener("click", prevSlide);
+        document
+        .getElementById("rightButton")
+        .addEventListener("click", nextSlide);
+    </script>
+    <script>
+        sortContent = (evt) => {
+            let x = event.target.id;
+            console.log(x);
+            if(x == "all") {
+                let nodeList = document.querySelectorAll(".all");
+                console.log(nodeList);
+                for (let i = 0; i < nodeList.length; i++) {
+                console.log(nodeList[i]);
+                nodeList[i].style.display = "block";
+}
+            } else if(x == "cars") {
+                let nodeList = document.querySelectorAll(".cars");
+                for (let i = 0; i < nodeList.length; i++) {
+                nodeList[i].style.display = "none";
+            }
+        }
+    };
+    </script>
+    <script>
+      let overlayText = document.getElementById("OverlayText");
+      let overlayImagesSrc = ["Content/slide/1.jpg", "Content/slide/2.jpg", "Content/slide/3.jpg", "Content/slide/4.jpg"];
+      let overlayTextHTML = [
+        "<p>tell me something your mother doesnt know</p><br><p>ooooooaaahhhhh1</p>", 
+        "<p>tell me something your mother doesnt know<p><br><p>ooooooaaahhhhh2</p>", 
+        "<p>tell me something your mother doesnt know<p><br><p>ooooooaaahhhhh3</p>", 
+      ];
+
+      openBlog = (evt) =>{
+        console.log(event.target.id);
+        let onlyNumber = event.target.id.replace(/\D/g, '') -1;
+        console.log(onlyNumber);
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("overlay").style.opacity = "1";
+        document.getElementById("overlayimage").src = overlayImagesSrc[onlyNumber];
+        document.getElementById("overlayText").innerHTML = overlayTextHTML[onlyNumber];
+        console.log(overlayTextHTML[onlyNumber])
+        if(typeof overlayTextHTML[onlyNumber] == 'undefined') {
+          document.getElementById("overlayText").innerHTML = "<h1>Sorry Couldn`t load the Content</h1>";
+        }
+      }
+      closeBlog = () =>{
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("overlayText").innerHTML = "";
+      }
+      document.getElementById("overlayClose").addEventListener("click", closeBlog);
+      addBlogListeners = () => {
+        var blog = document.getElementsByClassName("detect"); 
+        for (n=0, length = blog.length; n < length; n++) {
+            blog[n].id = "blog_" + (n + 1);
+            blog[n].addEventListener("click", openBlog); 
+        }
+      }; 
+
+    addBlogListeners()
+    </script>
+    <script>
+      // Making paragraphs Shorter
+      var shorten = document.getElementsByClassName("Shorten"); 
+      let ShortTextBeginning = [];
+      let ShortTextEnd = [];
+      let ShortTextOpen = [];
+      parLenght = () => {
+        for (n=0, length = shorten.length; n < length; n++) {
+          console.log(shorten[n]);
+          let text = shorten[n];
+          console.log(text.innerHTML.length);
+          ShortTextOpen[n] = "false";
+          if(text.innerHTML.length > 100){
+            console.log("too long");
+            let shortTextId = "short_" + n;
+            text.id = shortTextId;
+            ShortTextBeginning[n] = text.innerHTML.substring(0, 100);
+            ShortTextEnd[n] = text.innerHTML.substring(100, text.innerHTML.length);
+            console.log(shortTextId + " " + ShortTextBeginning[n]);
+            console.log(shortTextId + " "+ ShortTextEnd[n]);
+            let ShortText = ShortTextBeginning[n] + " ...<a OnClick='moreText()' id="+ "shortButton" + n + ">more</a>";
+            text.innerHTML = ShortText;
+          }
+        }
+      }
+
+      moreText = (evt) => {
+        let onlyNumber = parseInt(event.target.id.replace(/\D/g, ''));
+        console.log(onlyNumber);
+        let start = ShortTextBeginning[onlyNumber];
+        let end = ShortTextEnd[onlyNumber];
+        console.log(start);
+        console.log(end);
+        if(ShortTextOpen[onlyNumber] == "false"){
+        document.getElementById("short_" + onlyNumber).innerHTML = start + end + " ...<a OnClick='moreText()' id=" + "shortButtonClose" + onlyNumber + ">less</a>";
+        ShortTextOpen[onlyNumber] = "true";
+      } else if (ShortTextOpen[onlyNumber] == "true") {
+        document.getElementById("short_" + onlyNumber).innerHTML = start + " ...<a OnClick='moreText()' id=" + "shortButton" + onlyNumber + ">more</a>";
+        ShortTextOpen[onlyNumber] = "false";
+      }
+    }
+      setTimeout(parLenght, 500);
+    </script>
+</body>
+</html>
